@@ -474,6 +474,25 @@ button:focus,
     color : #888888;
     }
 
+.header .content-item small {
+    color: #ffffff
+}
+
+.header .content-item h3 {
+    margin         : 0 0 10px;
+    line-height    : 1;
+    font-weight    : bold;
+    text-transform : uppercase;
+    color: #cccccc
+    }
+
+.header .content-item h4 {
+    margin      : 0;
+    line-height : 1;
+    color: #ffffff
+    }
+
+
 /*-------------------
  * Contact
  *-------------------*/
