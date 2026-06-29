@@ -1,508 +1,260 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Nitin Gupta</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nitin Gupta — AI Transformation Leader</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#14304d; --navy-2:#1f4e79; --ink:#22303f; --muted:#5d6b7a;
+    --line:#e2e8ee; --bg:#f3f1ea; --card:#ffffff; --gold:#b8893b; --sand:#eef2f6;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  body{font-family:"Inter",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.5;font-size:14px}
+  .page{max-width:880px;margin:28px auto;background:var(--card);box-shadow:0 10px 40px rgba(20,48,77,.12);border-radius:6px;overflow:hidden}
 
-    <!-- favicon -->
-    <link href="favicon.ico" rel=icon>
+  /* header */
+  .masthead{display:grid;grid-template-columns:108px 1fr;gap:22px;align-items:center;padding:34px 40px 28px;background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 100%);color:#fff}
+  .masthead img{width:108px;height:108px;border-radius:50%;object-fit:cover;border:3px solid rgba(255,255,255,.85);background:#dfe6ee}
+  .mast-name{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:34px;letter-spacing:.5px;line-height:1.05}
+  .mast-role{font-weight:600;font-size:15px;color:#cfe0f0;margin-top:6px;text-transform:uppercase;letter-spacing:1.5px}
+  .mast-tag{font-size:13px;color:#aebfd2;margin-top:7px}
 
-    <!-- web-fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
+  /* contact strip */
+  .contact{display:flex;flex-wrap:wrap;gap:6px 22px;padding:12px 40px;background:var(--navy);color:#dbe6f1;font-size:12.5px;border-top:1px solid rgba(255,255,255,.12)}
+  .contact a{color:#dbe6f1;text-decoration:none}
+  .contact span b{color:var(--gold);font-weight:600;margin-right:5px;letter-spacing:.3px}
 
-    <!-- font-awesome -->
-    <link href="css/font-awesome.min.css" rel="stylesheet">
+  /* body grid */
+  .grid{display:grid;grid-template-columns:1fr 300px;gap:0}
+  .main{padding:26px 34px 32px}
+  .side{padding:26px 28px 32px;background:var(--sand);border-left:1px solid var(--line)}
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+  .sec-title{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:18px;color:var(--navy);letter-spacing:.3px;margin:0 0 14px;padding-bottom:7px;border-bottom:2px solid var(--gold);display:inline-block}
+  .side .sec-title{font-size:15px}
+  section + section{margin-top:24px}
 
-    <!-- Style CSS -->
-    <link href="css/style.css" rel="stylesheet">
+  .lead{font-size:13.5px;color:var(--ink);margin-bottom:2px}
 
+  /* timeline */
+  .timeline{position:relative;margin-left:8px;padding-left:20px;border-left:2px solid var(--line)}
+  .t-item{position:relative;padding-bottom:16px}
+  .t-item:last-child{padding-bottom:0}
+  .t-dot{position:absolute;left:-27px;top:4px;width:11px;height:11px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 3px var(--card)}
+  .t-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+  .t-head h3{font-size:14.5px;font-weight:700;color:var(--navy)}
+  .t-date{font-size:11.5px;color:var(--muted);white-space:nowrap;font-weight:500}
+  .t-sub{font-size:12.5px;font-weight:600;color:var(--navy-2);margin:1px 0 4px}
+  .t-loc{color:var(--muted);font-weight:400}
+  .t-item p{font-size:12.5px;color:#3c4856}
+
+  .edu-item{padding:9px 0;border-bottom:1px dashed var(--line)}
+  .edu-item:last-child{border-bottom:none}
+  .edu-head{display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+  .edu-head h3{font-size:13px;font-weight:700;color:var(--navy)}
+
+  /* skills */
+  .skill{margin-bottom:11px}
+  .skill-top{display:flex;justify-content:space-between;font-size:12px;font-weight:600;color:var(--ink);margin-bottom:4px}
+  .skill-pct{color:var(--gold)}
+  .bar{height:6px;background:#dde5ec;border-radius:6px;overflow:hidden}
+  .bar i{display:block;height:100%;width:var(--w);background:linear-gradient(90deg,var(--navy-2),var(--navy));border-radius:6px;animation:fill 1.1s cubic-bezier(.2,.7,.3,1) both}
+  @keyframes fill{from{width:0}to{width:var(--w)}}
+
+  .tags{display:flex;flex-wrap:wrap;gap:6px}
+  .tag{font-size:11.5px;font-weight:500;color:var(--navy);background:#fff;border:1px solid var(--line);padding:4px 9px;border-radius:20px}
+
+  @media (max-width:760px){
+    .grid{grid-template-columns:1fr}
+    .side{border-left:none;border-top:1px solid var(--line)}
+    .masthead{grid-template-columns:84px 1fr;padding:26px 24px}
+    .masthead img{width:84px;height:84px}
+    .contact,.main,.side{padding-left:24px;padding-right:24px}
+    .mast-name{font-size:27px}
+  }
+  @media (prefers-reduced-motion:reduce){.bar i{animation:none}}
+
+  @page{size:A4;margin:12mm}
+  @media print{
+    body{background:#fff;font-size:11.5px}
+    .page{box-shadow:none;margin:0;max-width:none;border-radius:0}
+    .bar i{animation:none}
+    .grid{grid-template-columns:1fr 270px}
+    a{color:inherit}
+  }
+</style>
 </head>
-<body id="page-top" data-spy="scroll" data-target=".navbar">
-<div id="main-wrapper">
-
-<div class="columns-block container">
-<div class="left-col-block blocks">
-    <header class="header theiaStickySidebar">
-        <div class="profile-img">
-            <img src="img/img-profile.png" class="img-responsive" alt=""/>
-        </div>
-        <div class="content">
-            <h1>Nitin Gupta</h1>
-            <span class="lead">Associate Director (Product - Engineering)</span>
-            <div>
-                <span class="about-text">
-                        Engineering Excellence | Product Strategist <br/> Product Innovation Manager | Visionary Leader
-                </span>
-
-                <!-- <p><i>"I believe in application of thought process and result oriented approach."</i></p> -->
-                <!-- <p><img src="img/Signature.png" alt="" class="img-responsive"/></p> -->
-            </div>
-            <br/>
-            <span class="about-text">Phone: +91-9654377145</span><br/>
-            <span class="about-text">Email: nitin88gupta@gmail.com</span>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/nitin-gupta-18a8241a/"> Linkedin </a></li>
-            </ul>
-        </div>
-
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img src="img/img-profile.png" alt="Nitin Gupta">
+      <div>
+        <div class="mast-name">Nitin Gupta</div>
+        <div class="mast-role">AI Transformation Leader</div>
+        <div class="mast-tag">Generative &amp; Agentic AI · Enterprise AI Strategy · Engineering Executive</div>
+      </div>
     </header>
-    <!-- .header-->
 
-    <section class="header">
-        <br/>
-        <br/>
-        <br/>
-        <h1>Work Experience</h1>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="content-item">
-                    <small>March 2022 - Mar 2025</small>
-                    <h3>Associate Director</h3>
-                    <h4>Xebia</h4>
-
-                    <p>India, Gurgaon</p>
-                </div>
-                <div class="content-item">
-                    <small>Apr 2020 - Jan 2022</small>
-                    <h3>Technical Product Manager</h3>
-                    <h4>Knowlarity</h4>
-
-                    <p>India, Gurgaon</p>
-                </div>
-                <div class="content-item">
-                    <small>Sep 2019 - Apr 2020</small>
-                    <h3>Engineering Manager</h3>
-                    <h4>Quess Corp</h4>
-
-                    <p>India, Gurgaon</p>
-                </div>
-                <div class="content-item">
-                    <small>June 2015 - Aug 2019</small>
-                    <h3>Senior Consultant</h3>
-                    <h4>Xebia</h4>
-
-                    <p>India, Gurgaon</p>
-                </div>
-                <!-- .experience-item -->
-                <div class="content-item">
-                    <small>May 2014 - June 2015</small>
-                    <h3>Associate Team Lead</h3>
-                    <h4>Tanzanite Infotech</h4>
-
-                    <p>India, Noida</p>
-                </div>
-                <!-- .experience-item -->
-                
-                <div class="content-item">
-                    <small>Dec 2014 - May 2014</small>
-                    <h3>Sr. Software Developer</h3>
-                    <h4>Shephertz Technologies</h4>
-
-                    <p>India, Gurgaon</p>
-                </div>
-                <!-- .experience-item -->
-
-                <div class="content-item">
-                    <small>Jan 2012 - Dec 2014</small>
-                    <h3>Software Developer</h3>
-                    <h4>Purple Talk</h4>
-
-                    <p>India, Hyderabad</p>
-                </div>
-                <!-- .experience-item -->
-
-                <div class="content-item">
-                    <small>2011 - 2012</small>
-                    <h3>Software Developer</h3>
-                    <h4>CDAC</h4>
-
-                    <p>India, Noida</p>
-                </div>
-                <!-- .experience-item -->
-            </div>
-        </div>
-        <!--.row-->
-    </section>
-    <!-- .section-experience -->
-
-    <section class="header">
-        <br/>
-        <br/>
-        <br/>
-        <h1>Education</h1>
-        <!--.row-->
-        <div class="row">
-            <div class="col-md-12">
-                <div class="content-item">
-                    <small>2024 - 2025</small>
-                    <h3>Executive Program <br/>Advanced Leadership & Change Management</h3>
-                    <h4>IIM Visakhapatnam</h4>
-
-                    <p>India, Visakhapatnam</p>
-                </div>
-                <!-- .experience-item -->
-                <div class="content-item">
-                    <small>2011 - 2012</small>
-                    <h3>PGD In Mobile Application Development</h3>
-                    <h4>CDAC Noida</h4>
-
-                    <p>India, Noida</p>
-                </div>
-                <!-- .experience-item -->
-                <div class="content-item">
-                    <small>2007 - 2011</small>
-                    <h3>B.Tech (ECE)</h3>
-                    <h4>GGSIPU, Delhi</h4>
-
-                    <p>India, Delhi</p>
-                </div>
-                <!-- .experience-item -->
-                <div class="content-item">
-                    <small>2003 - 2005</small>
-                    <h3>High School</h3>
-                    <h4>CBSE, SKV</h4>
-
-                    <p>India, Delhi</p>
-                </div>
-                <!-- .experience-item -->
-            </div>
-        </div>
-        <!--.row-->
-    </section>
-    <!-- .section-education -->
-</div>
-<!-- .left-col-block -->
-
-
-<div class="right-col-block blocks">
-<div class="theiaStickySidebar">
-<section class="expertise-wrapper section-wrapper gray-bg">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-title">
-                    <h2>Expertise</h2>
-                </div>
-            </div>
-        </div>  
-        <!-- .row -->
-
-        <ol style="list-style-type:disc;">
-            <li>Proficient in Analyzing and translating <b>business requirements</b> to technical requirements and <b>architecture.</b></li>
-            <li>Proficient in <b>client/business interaction</b>.</li>
-            <li>Experienced in <b>leading and managing distributed teams</b> across various India offices and UAE in a pure <b>onshore / offshore model</b>.</li>
-            <li>Having a very strong flair to <b> estimation and planning</b> in a pure agile environment.</li>
-            <li>Having a very strong inclination on technology which is keeping me <b>hands on till date</b>. I have great appetite for new technologies.</li>
-            <li>Extensive Agile Product Management and Software Engineering experience with expertise in creating Product Vision, Strategy, and Goals in line with the organisation focus areas.</li>
-            <li>data-oriented Product & Engineering Management working directly with the Head Of Products, CTO, CPO, and the leadership team of the company and contributing heavily in deciding the organisation's priorities.</li>
-            <li> I have managed multiple lines of products at Knowlarity Communications, Bain & Company, Mckinsey & Company, Xebia India, and others. Ensured that the products are developed with the optimum quality with the right set of features which the customers love. </li>
-            <li>Qualitative development and creativity help make sense of the numbers; identifying trends, offline factors, and most importantly the users’ mind helps not only add a human touch to technology but makes metrics insightful and actionable.</li>
-            <li>Immense experience in managing multiple stakeholders and deciding the priorities of the Product. Expert in Defining and managing the product features, tracking the development from end to end with proven success in leading geographically-and-culturally disparate cross-functional teams, on a wide range of technologies.</li>
-            <li>Experienced in creating and executing Product Release plans. Track record of delivering innovative products and the ability to work effectively with big sized teams.</li>
-            <li>Ability to think creatively, analyse quantitatively, problem-solve, scope technical requirements, and prioritise. A proven track record of delivering initiatives from conception through completion on time, within budget, and on or beyond the scope. Always put great emphasis on testing automation, and highly focused on delivering quality products, frequently and predictably.</li>
-        </ol>  
-        
-        <br/>
-        
-        <div class="row">
-            <div class="col-md-6">
-                <div class="expertise-item">
-                    <h3>ReactJS</h3>
-                    
-                    <p>
-                        Proficient in any modern front-end JS frameworks (e.g. ReactJS).
-                        Good experience of tooling used in frontend development (build, bundle, package tools/managers).
-                    </p>
-                </div>
-            </div>
-            
-            <div class="col-md-6">
-                <div class="expertise-item">
-                    <h3>Redux</h3>
-                    
-                    <p>
-                        Good knowledge of Adding Redux, Controling Application UI behavior with Redux, configuring Hot Module Replacement for faster development. 
-                    </p>
-                </div>
-            </div>  
-            
-        </div>
-
-        <div class="row">
-            <div class="col-md-6">
-                <div class="expertise-item">
-                    <h3>Mobile Native</h3>
-
-                    <p>
-                        Advanced knowledge of Objective-C, Cocoa Touch, OpenGL, iPhone/iPad Apple SDK.
-                        <br/>Good knowledge of XCode, Core Foundation, Core Data, SQLite, XML, JSON. 
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="expertise-item">
-                    <h3>BackBase</h3>
-
-                    <p>
-                        Backbase provides the leading omni-channel digital banking platform that empowers banks and other FI to accelerate their digital transformation.
-                    </p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-6">
-                <div class="expertise-item">
-                    <h3>NodeJS</h3>
-    
-                    <p>
-                        Experience with nodeJS and writing high performing code
-                        Worked with FeatherJS, Sequelize and some part of MongoDB to build Backend part of application.
-                    </p>
-                </div>
-            </div>  
-
-            <div class="col-md-6">
-                <div class="expertise-item">
-                    <h3>Agile</h3>
-
-                    <p>
-                        More than a Developer, A digital front-runner with an agile-driven focus.
-                        Belives in accelerate innovation and increase business impact.
-                    </p>
-                </div>
-            </div>
-
-        </div>
-        
-        <div class="row">
-            <div class="col-md-6">
-                <div class="expertise-item">
-                    <h3>TDD/BDD</h3>
-
-                    <p>
-                        Always put great emphasis on testing automation. Experties in working with Acceptance TDD and Developer TDD. Also worked with behavior-driven-development.
-                    </p>
-                </div>
-            </div>  
-            
-            <div class="col-md-6">
-                <div class="expertise-item">
-                    <h3>Python</h3>
-    
-                    <p>
-                        Working on Building server-side services & APIs using Python (Django/Flask framework) for business processes and use cases specific
-                        Writing highly performant, scalable and efficient code in Python (Django/Flask) & other languages to power the ECHO applications
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="expertise-item">
-                    <h3>Git & CI/CD</h3>
-
-                    <p>
-                        Working with Git is expertise building quality software with code review and enforcing to create a merge checklist, collaborate, test and deploy.
-                        Good knowledgeand experince in adding Velocity, Productivity, Sustainability to software development using CI/CD.
-                    </p>
-                </div>
-            </div> 
-
-        </div>
-
+    <div class="contact">
+      <span><b>Phone</b><a href="tel:+91-9654377145">+91-9654377145</a></span>
+      <span><b>Email</b><a href="mailto:nitin88gupta@gmail.com">nitin88gupta@gmail.com</a></span>
+      <span><b>LinkedIn</b><a href="https://www.linkedin.com/in/nitin-gupta-18a8241a/">linkedin.com/in/nitin-gupta-18a8241a</a></span>
+      <span><b>Location</b>Gurgaon, India</span>
     </div>
-</section>
-<!-- .expertise-wrapper -->
 
-<section class="section-wrapper skills-wrapper">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-title">
-                    <h2>Skills</h2>
-                </div>
-            </div>
+    <div class="grid">
+      <div class="main">
+        <section>
+          <h2 class="sec-title">Profile</h2>
+          <p class="lead">Technology executive with 14+ years leading enterprise transformation, now focused on driving Generative and Agentic AI adoption across BFSI and enterprise domains. Pairs deep product-engineering leadership — 180+ member orgs, 32 direct reports, ₹12–15 Cr P&amp;L — with hands-on delivery of AI-enabled banking solutions, intelligent categorization, and recommendation engines. Builds AI strategy, adoption roadmaps, governance, and intelligent automation that tie emerging technology to business value.</p>
+        </section>
 
+        <section>
+          <h2 class="sec-title">Work Experience</h2>
+          <div class="timeline">
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-head">
+            <h3>Founder</h3>
+            <span class="t-date">Apr 2025 – Present</span>
+          </div>
+          <div class="t-sub">Agnisc Corp <span class="t-loc">· India</span></div>
+          <p>Founded a consultancy advising enterprises on AI transformation, GenAI implementation, and intelligent-automation strategy — from roadmap to governed, production-grade delivery.</p>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="progress-wrapper">
-
-                    <div class="progress-item">
-                        <span class="progress-title">Engineering Leadership</span>
-
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                                 aria-valuemax="100" style="width: 80%"><span class="progress-percent"> 80%</span>
-                            </div>
-                        </div>
-                        <!-- /.progress -->
-                    </div>
-                    <!-- /.skill-progress -->
-
-                    <div class="progress-item">
-                        <span class="progress-title">Product Vision</span>
-
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0"
-                                 aria-valuemax="100" style="width: 85%"><span class="progress-percent"> 85%</span>
-                            </div>
-                        </div>
-                        <!-- /.progress -->
-                    </div>
-                    <!-- /.skill-progress -->
-
-                    <div class="progress-item">
-                        <span class="progress-title">Team Building</span>
-
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0"
-                                 aria-valuemax="100" style="width: 95%"><span class="progress-percent"> 95%</span>
-                            </div>
-                        </div>
-                        <!-- /.progress -->
-                    </div>
-                    <!-- /.skill-progress -->
-
-                    <div class="progress-item">
-                        <span class="progress-title">Cloud Infrastructure & Technical Architecture</span>
-
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                                 aria-valuemax="100" style="width: 90%"><span class="progress-percent"> 90%</span>
-                            </div>
-                        </div>
-                        <!-- .progress -->
-                    </div>
-                    <!-- .skill-progress -->
-
-                    <div class="progress-item">
-                        <span class="progress-title">Customer Experience & Satisfaction</span>
-
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                                 aria-valuemax="100" style="width: 90%"><span class="progress-percent"> 90%</span>
-                            </div>
-                        </div>
-                        <!-- /.progress -->
-                    </div>
-                    <!-- /.skill-progress -->
-
-                    <div class="progress-item">
-                        <span class="progress-title">Engineering Excellence</span>
-
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
-                                 aria-valuemax="100" style="width: 95%;"><span class="progress-percent"> 95%</span>
-                            </div>
-                        </div>
-                        <!-- /.progress -->
-                    </div>
-                    <!-- /.skill-progress -->
-
-                    <div class="progress-item">
-                        <span class="progress-title">Product Development</span>
-
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
-                                 aria-valuemax="100" style="width: 85%;"><span class="progress-percent"> 85%</span>
-                            </div>
-                        </div>
-                        <!-- /.progress -->
-                    </div>
-                    <!-- /.skill-progress -->
-
-                    <div class="progress-item">
-                        <span class="progress-title">Agile / Project Management</span>
-
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                                 aria-valuemax="100" style="width: 80%;"><span class="progress-percent"> 80%</span>
-                            </div>
-                        </div>
-                        <!-- .progress -->
-                    </div>
-                    <!-- .skill-progress -->
-
-                    <div class="progress-item">
-                        <span class="progress-title">Test Automation & DevOps</span>
-
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                                 aria-valuemax="100" style="width: 75%;"><span class="progress-percent"> 75%</span>
-                            </div>
-                        </div>
-                        <!-- /.progress -->
-                    </div>
-                    <!-- /.skill-progress -->
-
-                </div>
-                <!-- /.progress-wrapper -->
-            </div>
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-head">
+            <h3>Associate Director — Product Engineering</h3>
+            <span class="t-date">Mar 2022 – Mar 2025</span>
+          </div>
+          <div class="t-sub">Xebia <span class="t-loc">· Gurgaon, India</span></div>
+          <p>Delivered AI-enabled banking experiences — AI-powered transaction categorization and intelligent recommendation engines — while leading a 180+ member org with ₹12–15 Cr P&amp;L. Shaped modernization and automation strategy for enterprise clients across BFSI.</p>
         </div>
-        <!--.row -->
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-head">
+            <h3>Technical Product Manager</h3>
+            <span class="t-date">Apr 2020 – Jan 2022</span>
+          </div>
+          <div class="t-sub">Knowlarity <span class="t-loc">· Gurgaon, India</span></div>
+          <p>Drove data-driven product capabilities and automation on a cloud-communications platform, improving reliability and customer experience.</p>
+        </div>
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-head">
+            <h3>Engineering Manager</h3>
+            <span class="t-date">Sep 2019 – Apr 2020</span>
+          </div>
+          <div class="t-sub">Quess Corp <span class="t-loc">· Gurgaon, India</span></div>
+          <p>Led engineering delivery and technology execution for enterprise initiatives, accountable for team output, quality, and schedule.</p>
+        </div>
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-head">
+            <h3>Senior Consultant</h3>
+            <span class="t-date">Jun 2015 – Aug 2019</span>
+          </div>
+          <div class="t-sub">Xebia <span class="t-loc">· Gurgaon, India</span></div>
+          <p>Delivered cloud-native, full-stack enterprise applications (Node.js, React, Angular, AWS) and solution architecture across enterprise modernization programs.</p>
+        </div>
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-head">
+            <h3>Associate Team Lead</h3>
+            <span class="t-date">May 2014 – Jun 2015</span>
+          </div>
+          <div class="t-sub">Tanzanite Infotech <span class="t-loc">· Noida, India</span></div>
+          <p>Led technical design and development for enterprise software, setting engineering standards for the team.</p>
+        </div>
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-head">
+            <h3>Sr. Software Developer</h3>
+            <span class="t-date">Dec 2013 – May 2014</span>
+          </div>
+          <div class="t-sub">ShepHertz Technologies <span class="t-loc">· Gurgaon, India</span></div>
+          <p>Built backend and platform capabilities for enterprise applications at scale.</p>
+        </div>
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-head">
+            <h3>Software Developer</h3>
+            <span class="t-date">Jan 2012 – Dec 2013</span>
+          </div>
+          <div class="t-sub">Purple Talk <span class="t-loc">· Hyderabad, India</span></div>
+          <p>Developed iOS and enterprise mobile applications end to end.</p>
+        </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 class="sec-title">Education</h2>
+          
+        <div class="edu-item">
+          <div class="edu-head"><h3>Executive Program — Advanced Leadership &amp; Change Management</h3><span class="t-date">2024 – 2025</span></div>
+          <div class="t-sub">IIM Visakhapatnam</div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-head"><h3>PG Diploma — Mobile Application Development</h3><span class="t-date">2011 – 2012</span></div>
+          <div class="t-sub">CDAC Noida</div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-head"><h3>B.Tech — Electronics &amp; Communication Engineering</h3><span class="t-date">2007 – 2011</span></div>
+          <div class="t-sub">GGSIPU, Delhi</div>
+        </div>
+        </section>
+      </div>
+
+      <aside class="side">
+        <section>
+          <h2 class="sec-title">Core Skills</h2>
+          
+          <div class="skill">
+            <div class="skill-top"><span>AI / GenAI Strategy</span><span class="skill-pct">85%</span></div>
+            <div class="bar"><i style="--w:85%"></i></div>
+          </div>
+          <div class="skill">
+            <div class="skill-top"><span>Enterprise AI Adoption</span><span class="skill-pct">80%</span></div>
+            <div class="bar"><i style="--w:80%"></i></div>
+          </div>
+          <div class="skill">
+            <div class="skill-top"><span>Engineering Leadership</span><span class="skill-pct">90%</span></div>
+            <div class="bar"><i style="--w:90%"></i></div>
+          </div>
+          <div class="skill">
+            <div class="skill-top"><span>Cloud &amp; Architecture</span><span class="skill-pct">90%</span></div>
+            <div class="bar"><i style="--w:90%"></i></div>
+          </div>
+          <div class="skill">
+            <div class="skill-top"><span>Intelligent Automation</span><span class="skill-pct">80%</span></div>
+            <div class="bar"><i style="--w:80%"></i></div>
+          </div>
+          <div class="skill">
+            <div class="skill-top"><span>Change Management</span><span class="skill-pct">85%</span></div>
+            <div class="bar"><i style="--w:85%"></i></div>
+          </div>
+        </section>
+
+        <section>
+          <h2 class="sec-title">Expertise</h2>
+          <div class="tags"><span class="tag">Generative AI</span><span class="tag">Agentic AI</span><span class="tag">LLM Applications</span><span class="tag">AI Governance</span><span class="tag">Intelligent Automation</span><span class="tag">Enterprise AI Adoption</span><span class="tag">Python</span><span class="tag">Cloud-Native</span><span class="tag">Microservices</span><span class="tag">Backbase</span><span class="tag">ThoughtMachine</span><span class="tag">AWS</span><span class="tag">Digital Banking</span><span class="tag">Change Management</span></div>
+        </section>
+
+        <section>
+          <h2 class="sec-title">Highlights</h2>
+          <div class="tags" style="flex-direction:column;align-items:flex-start;gap:8px">
+            <span class="tag" style="border-radius:6px">14+ years in technology &amp; engineering leadership</span>
+            <span class="tag" style="border-radius:6px">Led 180+ member orgs · 32 direct reports</span>
+            <span class="tag" style="border-radius:6px">₹12–15 Cr P&amp;L ownership</span>
+            <span class="tag" style="border-radius:6px">Founder, Agnisc Corp</span>
+          </div>
+        </section>
+      </aside>
     </div>
-    <!-- .container-fluid -->
-</section>
-<!-- .skills-wrapper -->
-
-<section class="section-wrapper">
-        <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="section-title">
-                            <h2>More About Me</h2>
-                        </div>
-                    </div>
-                </div>  
-                <!-- .row -->
-        
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="expertise-item">
-                            <p>
-                                I enjoy developing Baselines; doing complete requirement gathering, researching analytics, Social and more to help understand the current Competitive Landscape. 
-                                <br/><br/>
-                                Knowing <i>“where we are”</i> is essential to setting goals of <i>“where we want to be”</i> and planning Road-maps to meet same. 
-                                <br/><br/>
-                                I am a seasoned professional dedicated to driving product innovation and engineering excellence, with a focus on creating impactful products that deliver sustainable growth and value for customers and stakeholders.
-                                With extensive experience as a Group Product Manager, I have successfully defined strategic visions and delivered innovative solutions for leading organizations, including Xebia, Knowlarity Communications, and Quess Corp. 
-                                My expertise lies in crafting customer-centric strategies that align product vision with organizational priorities, resulting in measurable business outcomes
-                                and significant revenue growth.
-                                <br/><br/>
-                                I’ve worked on site and remote, as well as varying shades in-between. I’ve worked with small and large organizations in multiple industries and technologies. 
-                                <br/><br/>I've worked in all phases of software development life cycle. Also have good understanding of Agile methodologies, specifically SCRUM and Test Driven Development (TDD).
-                                <br/><br/>From Technology prospect i am having good understanding of Objective-c, Swift, Backbase, JavaScript, ReactJS, Redux, NodeJS ,Cocos2d, Domain Driven Design, UI/UX design pattern, Apple UI Guidelines, Apple review and release guidelines (for both App store and Enterprise). 
-                                <br/><br/>
-                                In past I've been associated with and contributed to different flavours of projects in different business domains like Games, Social Chat, Business driven, Enterprise, Food, Security, Medical, Insurance, Media Publishing, Manufacturing applications and Banking.
-                                <br/><br/>
-                                I believe in a calm, focused, dedicated and self-motivated approach to work with good communication, presentation, consulting and organizational skills. I am also having ability to communicate effectively with both technical and non- technical people.
-                                <br/><br/>
-                                I have experience designing and developing for multiple form factors (mobile/tablet/desktop) applications
-                                <br/><br/>
-                                I always put great emphasis on testing automation, and highly focused on, <b> quality products, frequently and predictably</b>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-</section>
-<!-- more about me -->
-
-</div>
-<!-- Sticky -->
-</div>
-<!-- .right-col-block -->
-</div>
-<!-- .columns-block -->
-</div>
-<!-- #main-wrapper -->
-
+  </div>
 </body>
 </html>
