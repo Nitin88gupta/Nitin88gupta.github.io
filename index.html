@@ -1,633 +1,341 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Nitin Gupta — Engineering Delivery Director</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      :root {
-        --navy: #14304d;
-        --navy-2: #1f4e79;
-        --ink: #22303f;
-        --muted: #5d6b7a;
-        --line: #e2e8ee;
-        --bg: #f3f1ea;
-        --card: #ffffff;
-        --gold: #b8893b;
-        --sand: #eef2f6;
-      }
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-      html {
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
-      }
-      body {
-        font-family:
-          "Inter",
-          system-ui,
-          -apple-system,
-          Segoe UI,
-          Roboto,
-          Arial,
-          sans-serif;
-        color: var(--ink);
-        background: var(--bg);
-        line-height: 1.5;
-        font-size: 14px;
-      }
-      .page {
-        max-width: 880px;
-        margin: 28px auto;
-        background: var(--card);
-        box-shadow: 0 10px 40px rgba(20, 48, 77, 0.12);
-        border-radius: 6px;
-        overflow: hidden;
-      }
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nitin Gupta — Technology &amp; Engineering Leader</title>
+<meta name="description" content="Nitin Gupta — Product Engineering, AI Transformation, and Engineering Delivery leadership. 14+ years scaling engineering organizations across BFSI, Telecom, Aviation, and Enterprise SaaS.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#14304d; --navy-2:#1f4e79; --ink:#22303f; --muted:#5d6b7a;
+    --line:#e2e8ee; --bg:#f3f1ea; --card:#ffffff; --gold:#b8893b; --sand:#eef2f6;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-print-color-adjust:exact;print-color-adjust:exact;scroll-behavior:smooth}
+  body{font-family:"Inter",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.5;font-size:14px}
+  .page{max-width:900px;margin:28px auto;background:var(--card);box-shadow:0 10px 40px rgba(20,48,77,.12);border-radius:6px;overflow:hidden}
 
-      /* header */
-      .masthead {
-        display: grid;
-        grid-template-columns: 108px 1fr;
-        gap: 22px;
-        align-items: center;
-        padding: 34px 40px 28px;
-        background: linear-gradient(135deg, var(--navy) 0%, var(--navy-2) 100%);
-        color: #fff;
-      }
-      .masthead img {
-        width: 108px;
-        height: 108px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 3px solid rgba(255, 255, 255, 0.85);
-        background: #dfe6ee;
-      }
-      .mast-name {
-        font-family: "Fraunces", Georgia, serif;
-        font-weight: 600;
-        font-size: 34px;
-        letter-spacing: 0.5px;
-        line-height: 1.05;
-      }
-      .mast-role {
-        font-weight: 600;
-        font-size: 15px;
-        color: #cfe0f0;
-        margin-top: 6px;
-        text-transform: uppercase;
-        letter-spacing: 1.5px;
-      }
-      .mast-tag {
-        font-size: 13px;
-        color: #aebfd2;
-        margin-top: 7px;
-      }
+  /* header */
+  .masthead{display:grid;grid-template-columns:112px 1fr;gap:24px;align-items:center;padding:36px 42px 30px;background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 100%);color:#fff}
+  .masthead img{width:112px;height:112px;border-radius:50%;object-fit:cover;border:3px solid rgba(255,255,255,.85);background:#dfe6ee}
+  .mast-name{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:36px;letter-spacing:.5px;line-height:1.05}
+  .mast-role{font-weight:600;font-size:15px;color:#cfe0f0;margin-top:7px;text-transform:uppercase;letter-spacing:1.6px;transition:opacity .25s}
+  .mast-tag{font-size:13px;color:#aebfd2;margin-top:7px;transition:opacity .25s}
 
-      /* contact strip */
-      .contact {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 6px 22px;
-        padding: 12px 40px;
-        background: var(--navy);
-        color: #dbe6f1;
-        font-size: 12.5px;
-        border-top: 1px solid rgba(255, 255, 255, 0.12);
-      }
-      .contact a {
-        color: #dbe6f1;
-        text-decoration: none;
-      }
-      .contact span b {
-        color: var(--gold);
-        font-weight: 600;
-        margin-right: 5px;
-        letter-spacing: 0.3px;
-      }
+  /* contact strip */
+  .contact{display:flex;flex-wrap:wrap;gap:6px 24px;padding:12px 42px;background:var(--navy);color:#dbe6f1;font-size:12.5px;border-top:1px solid rgba(255,255,255,.12)}
+  .contact a{color:#dbe6f1;text-decoration:none}
+  .contact a:hover{color:#fff}
+  .contact span b{color:var(--gold);font-weight:600;margin-right:5px;letter-spacing:.3px}
 
-      /* body grid */
-      .grid {
-        display: grid;
-        grid-template-columns: 1fr 300px;
-        gap: 0;
-      }
-      .main {
-        padding: 26px 34px 32px;
-      }
-      .side {
-        padding: 26px 28px 32px;
-        background: var(--sand);
-        border-left: 1px solid var(--line);
-      }
+  /* sticky role switcher */
+  .switcher{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:12px;
+    padding:10px 42px;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+  .seg{display:inline-flex;background:var(--sand);border:1px solid var(--line);border-radius:30px;padding:3px;flex-wrap:wrap}
+  .seg button{border:0;background:transparent;font:inherit;font-size:12.5px;font-weight:600;color:var(--muted);
+    padding:7px 14px;border-radius:24px;cursor:pointer;transition:all .2s;white-space:nowrap}
+  .seg button:hover{color:var(--navy)}
+  .seg button[aria-selected="true"]{background:var(--navy);color:#fff;box-shadow:0 2px 8px rgba(20,48,77,.25)}
+  .print-btn{border:1px solid var(--navy-2);background:#fff;color:var(--navy-2);font:inherit;font-size:12.5px;font-weight:600;
+    padding:7px 14px;border-radius:24px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:all .2s;white-space:nowrap}
+  .print-btn:hover{background:var(--navy-2);color:#fff}
 
-      .sec-title {
-        font-family: "Fraunces", Georgia, serif;
-        font-weight: 600;
-        font-size: 18px;
-        color: var(--navy);
-        letter-spacing: 0.3px;
-        margin: 0 0 14px;
-        padding-bottom: 7px;
-        border-bottom: 2px solid var(--gold);
-        display: inline-block;
-      }
-      .side .sec-title {
-        font-size: 15px;
-      }
-      section + section {
-        margin-top: 24px;
-      }
+  /* body grid */
+  .grid{display:grid;grid-template-columns:1fr 304px;gap:0}
+  .main{padding:26px 36px 30px}
+  .side{padding:26px 30px 30px;background:var(--sand);border-left:1px solid var(--line)}
 
-      .lead {
-        font-size: 13.5px;
-        color: var(--ink);
-        margin-bottom: 2px;
-      }
+  .sec-title{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:18px;color:var(--navy);letter-spacing:.3px;margin:0 0 14px;padding-bottom:7px;border-bottom:2px solid var(--gold);display:inline-block}
+  .side .sec-title{font-size:15px}
+  section + section{margin-top:24px}
 
-      /* timeline */
-      .timeline {
-        position: relative;
-        margin-left: 8px;
-        padding-left: 20px;
-        border-left: 2px solid var(--line);
-      }
-      .t-item {
-        position: relative;
-        padding-bottom: 16px;
-      }
-      .t-item:last-child {
-        padding-bottom: 0;
-      }
-      .t-dot {
-        position: absolute;
-        left: -27px;
-        top: 4px;
-        width: 11px;
-        height: 11px;
-        border-radius: 50%;
-        background: var(--gold);
-        box-shadow: 0 0 0 3px var(--card);
-      }
-      .t-head {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        gap: 12px;
-      }
-      .t-head h3 {
-        font-size: 14.5px;
-        font-weight: 700;
-        color: var(--navy);
-      }
-      .t-date {
-        font-size: 11.5px;
-        color: var(--muted);
-        white-space: nowrap;
-        font-weight: 500;
-      }
-      .t-sub {
-        font-size: 12.5px;
-        font-weight: 600;
-        color: var(--navy-2);
-        margin: 1px 0 4px;
-      }
-      .t-loc {
-        color: var(--muted);
-        font-weight: 400;
-      }
-      .t-item p {
-        font-size: 12.5px;
-        color: #3c4856;
-      }
+  .lead{font-size:13.5px;color:var(--ink);transition:opacity .25s}
 
-      .edu-item {
-        padding: 9px 0;
-        border-bottom: 1px dashed var(--line);
-      }
-      .edu-item:last-child {
-        border-bottom: none;
-      }
-      .edu-head {
-        display: flex;
-        justify-content: space-between;
-        gap: 10px;
-        align-items: baseline;
-      }
-      .edu-head h3 {
-        font-size: 13px;
-        font-weight: 700;
-        color: var(--navy);
-      }
+  /* timeline */
+  .timeline{position:relative;margin-left:8px;padding-left:20px;border-left:2px solid var(--line)}
+  .t-item{position:relative;padding-bottom:16px}
+  .t-item:last-child{padding-bottom:0}
+  .t-dot{position:absolute;left:-27px;top:4px;width:11px;height:11px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 3px var(--card)}
+  .t-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+  .t-head h3{font-size:14.5px;font-weight:700;color:var(--navy)}
+  .t-date{font-size:11.5px;color:var(--muted);white-space:nowrap;font-weight:500}
+  .t-sub{font-size:12.5px;font-weight:600;color:var(--navy-2);margin:1px 0 4px}
+  .t-loc{color:var(--muted);font-weight:400}
+  .t-item p{font-size:12.5px;color:#3c4856;transition:opacity .25s}
 
-      /* skills */
-      .skill {
-        margin-bottom: 11px;
-      }
-      .skill-top {
-        display: flex;
-        justify-content: space-between;
-        font-size: 12px;
-        font-weight: 600;
-        color: var(--ink);
-        margin-bottom: 4px;
-      }
-      .skill-pct {
-        color: var(--gold);
-      }
-      .bar {
-        height: 6px;
-        background: #dde5ec;
-        border-radius: 6px;
-        overflow: hidden;
-      }
-      .bar i {
-        display: block;
-        height: 100%;
-        width: var(--w);
-        background: linear-gradient(90deg, var(--navy-2), var(--navy));
-        border-radius: 6px;
-        animation: fill 1.1s cubic-bezier(0.2, 0.7, 0.3, 1) both;
-      }
-      @keyframes fill {
-        from {
-          width: 0;
-        }
-        to {
-          width: var(--w);
-        }
-      }
+  .edu-item{padding:9px 0;border-bottom:1px dashed var(--line)}
+  .edu-item:last-child{border-bottom:none}
+  .edu-head{display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+  .edu-head h3{font-size:13px;font-weight:700;color:var(--navy)}
 
-      .tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 6px;
-      }
-      .tag {
-        font-size: 11.5px;
-        font-weight: 500;
-        color: var(--navy);
-        background: #fff;
-        border: 1px solid var(--line);
-        padding: 4px 9px;
-        border-radius: 20px;
-      }
+  /* skills */
+  .skill{margin-bottom:11px}
+  .skill-top{display:flex;justify-content:space-between;font-size:12px;font-weight:600;color:var(--ink);margin-bottom:4px}
+  .skill-pct{color:var(--gold)}
+  .bar{height:6px;background:#dde5ec;border-radius:6px;overflow:hidden}
+  .bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--navy-2),var(--navy));border-radius:6px;transition:width 1s cubic-bezier(.2,.7,.3,1)}
 
-      @media (max-width: 760px) {
-        .grid {
-          grid-template-columns: 1fr;
-        }
-        .side {
-          border-left: none;
-          border-top: 1px solid var(--line);
-        }
-        .masthead {
-          grid-template-columns: 84px 1fr;
-          padding: 26px 24px;
-        }
-        .masthead img {
-          width: 84px;
-          height: 84px;
-        }
-        .contact,
-        .main,
-        .side {
-          padding-left: 24px;
-          padding-right: 24px;
-        }
-        .mast-name {
-          font-size: 27px;
-        }
-      }
-      @media (prefers-reduced-motion: reduce) {
-        .bar i {
-          animation: none;
-        }
-      }
+  .tags{display:flex;flex-wrap:wrap;gap:6px}
+  .tag{font-size:11.5px;font-weight:500;color:var(--navy);background:#fff;border:1px solid var(--line);padding:4px 9px;border-radius:20px}
+  .hl .tag{border-radius:6px}
 
-      @page {
-        size: A4;
-        margin: 12mm;
-      }
-      @media print {
-        body {
-          background: #fff;
-          font-size: 11.5px;
-        }
-        .page {
-          box-shadow: none;
-          margin: 0;
-          max-width: none;
-          border-radius: 0;
-        }
-        .bar i {
-          animation: none;
-        }
-        .grid {
-          grid-template-columns: 1fr 270px;
-        }
-        a {
-          color: inherit;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="page">
-      <header class="masthead">
-        <img src="img/img-profile.png" alt="Nitin Gupta" />
-        <div>
-          <div class="mast-name">Nitin Gupta</div>
-          <div class="mast-role">Engineering Delivery Director</div>
-          <div class="mast-tag">
-            Global Distributed Delivery · Portfolio &amp; Program Leadership ·
-            P&amp;L
-          </div>
-        </div>
-      </header>
+  /* about */
+  .about{padding:8px 36px 32px}
+  .about p{font-size:13px;color:#3c4856;margin-bottom:9px}
 
-      <div class="contact">
-        <span><b>Phone</b><a href="tel:+91-9654377145">+91-9654377145</a></span>
-        <span
-          ><b>Email</b
-          ><a href="mailto:nitin88gupta@gmail.com"
-            >nitin88gupta@gmail.com</a
-          ></span
-        >
-        <span
-          ><b>LinkedIn</b
-          ><a href="https://www.linkedin.com/in/nitin-gupta-18a8241a/"
-            >linkedin.com/in/nitin-gupta-18a8241a</a
-          ></span
-        >
-        <span><b>Location</b>Gurgaon, India</span>
+  footer{padding:18px 42px 26px;background:var(--navy);color:#cdd9e6;font-size:12px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
+  footer a{color:var(--gold);text-decoration:none}
+
+  .fade{opacity:0}
+
+  @media (max-width:780px){
+    .grid{grid-template-columns:1fr}
+    .side{border-left:none;border-top:1px solid var(--line)}
+    .masthead{grid-template-columns:84px 1fr;padding:26px 22px}
+    .masthead img{width:84px;height:84px}
+    .contact,.switcher,.main,.side,.about,footer{padding-left:22px;padding-right:22px}
+    .mast-name{font-size:28px}
+    .switcher{flex-direction:column;align-items:stretch}
+  }
+  @media (prefers-reduced-motion:reduce){.bar i,.mast-role,.mast-tag,.lead,.t-item p{transition:none}}
+
+  @page{size:A4;margin:12mm}
+  @media print{
+    body{background:#fff;font-size:11.5px}
+    .page{box-shadow:none;margin:0;max-width:none;border-radius:0}
+    .switcher{display:none}
+    .grid{grid-template-columns:1fr 270px}
+    .bar i{transition:none}
+    a{color:inherit}
+  }
+</style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img src="img/img-profile.jpg" alt="Nitin Gupta">
+      <div>
+        <div class="mast-name">Nitin Gupta</div>
+        <div class="mast-role" id="role">Product Engineering Director</div>
+        <div class="mast-tag" id="tagline">Engineering Excellence · Cloud-Native Platforms · P&amp;L Leadership</div>
       </div>
+    </header>
 
-      <div class="grid">
-        <div class="main">
-          <section>
-            <h2 class="sec-title">Profile</h2>
-            <p class="lead">
-              Engineering delivery executive with 14+ years managing distributed
-              teams, enterprise portfolios, and complex transformation programs
-              across BFSI, Telecom, Aviation, and Enterprise SaaS. Led 180+
-              member organizations with 32 direct reports and ₹12–15 Cr P&amp;L,
-              accountable for delivery excellence, operational governance,
-              customer success, and profitability — well suited to global and
-              remote-first operating models.
-            </p>
-          </section>
-
-          <section>
-            <h2 class="sec-title">Work Experience</h2>
-            <div class="timeline">
-              <div class="t-item">
-                <div class="t-dot"></div>
-                <div class="t-head">
-                  <h3>Founder</h3>
-                  <span class="t-date">Apr 2025 – Present</span>
-                </div>
-                <div class="t-sub">
-                  Agnisc Corp <span class="t-loc">· India</span>
-                </div>
-                <p>
-                  Founded a digital-engineering and growth-consulting firm
-                  delivering product strategy, engineering modernization, and
-                  AI-enabled solutions to enterprise clients.
-                </p>
-              </div>
-              <div class="t-item">
-                <div class="t-dot"></div>
-                <div class="t-head">
-                  <h3>Associate Director — Product Engineering</h3>
-                  <span class="t-date">Mar 2022 – Mar 2025</span>
-                </div>
-                <div class="t-sub">
-                  Xebia <span class="t-loc">· Gurgaon, India</span>
-                </div>
-                <p>
-                  Owned an enterprise engineering portfolio with ₹12–15 Cr
-                  P&amp;L and a 180+ member, geographically distributed
-                  organization (32 direct reports). Established
-                  delivery-governance and CoE frameworks driving predictable,
-                  high-quality outcomes across concurrent banking programs.
-                </p>
-              </div>
-              <div class="t-item">
-                <div class="t-dot"></div>
-                <div class="t-head">
-                  <h3>Technical Product Manager</h3>
-                  <span class="t-date">Apr 2020 – Jan 2022</span>
-                </div>
-                <div class="t-sub">
-                  Knowlarity <span class="t-loc">· Gurgaon, India</span>
-                </div>
-                <p>
-                  Managed end-to-end delivery for a cloud-communications
-                  platform — scope, quality, and timelines across
-                  cross-functional engineering teams.
-                </p>
-              </div>
-              <div class="t-item">
-                <div class="t-dot"></div>
-                <div class="t-head">
-                  <h3>Engineering Manager</h3>
-                  <span class="t-date">Sep 2019 – Apr 2020</span>
-                </div>
-                <div class="t-sub">
-                  Quess Corp <span class="t-loc">· Gurgaon, India</span>
-                </div>
-                <p>
-                  Led engineering delivery and technology execution for
-                  enterprise initiatives, accountable for team output, quality,
-                  and schedule.
-                </p>
-              </div>
-              <div class="t-item">
-                <div class="t-dot"></div>
-                <div class="t-head">
-                  <h3>Senior Consultant</h3>
-                  <span class="t-date">Jun 2015 – Aug 2019</span>
-                </div>
-                <div class="t-sub">
-                  Xebia <span class="t-loc">· Gurgaon, India</span>
-                </div>
-                <p>
-                  Delivered cloud-native, full-stack enterprise applications
-                  (Node.js, React, Angular, AWS) and solution architecture
-                  across enterprise modernization programs.
-                </p>
-              </div>
-              <div class="t-item">
-                <div class="t-dot"></div>
-                <div class="t-head">
-                  <h3>Associate Team Lead</h3>
-                  <span class="t-date">May 2014 – Jun 2015</span>
-                </div>
-                <div class="t-sub">
-                  Tanzanite Infotech <span class="t-loc">· Noida, India</span>
-                </div>
-                <p>
-                  Led technical design and development for enterprise software,
-                  setting engineering standards for the team.
-                </p>
-              </div>
-              <div class="t-item">
-                <div class="t-dot"></div>
-                <div class="t-head">
-                  <h3>Sr. Software Developer</h3>
-                  <span class="t-date">Dec 2013 – May 2014</span>
-                </div>
-                <div class="t-sub">
-                  ShepHertz Technologies
-                  <span class="t-loc">· Gurgaon, India</span>
-                </div>
-                <p>
-                  Built backend and platform capabilities for enterprise
-                  applications at scale.
-                </p>
-              </div>
-              <div class="t-item">
-                <div class="t-dot"></div>
-                <div class="t-head">
-                  <h3>Software Developer</h3>
-                  <span class="t-date">Jan 2012 – Dec 2013</span>
-                </div>
-                <div class="t-sub">
-                  Purple Talk <span class="t-loc">· Hyderabad, India</span>
-                </div>
-                <p>
-                  Developed iOS and enterprise mobile applications end to end.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          <section>
-            <h2 class="sec-title">Education</h2>
-
-            <div class="edu-item">
-              <div class="edu-head">
-                <h3>
-                  Executive Program — Advanced Leadership &amp; Change
-                  Management
-                </h3>
-                <span class="t-date">2024 – 2025</span>
-              </div>
-              <div class="t-sub">IIM Visakhapatnam</div>
-            </div>
-            <div class="edu-item">
-              <div class="edu-head">
-                <h3>PG Diploma — Mobile Application Development</h3>
-                <span class="t-date">2011 – 2012</span>
-              </div>
-              <div class="t-sub">CDAC Noida</div>
-            </div>
-            <div class="edu-item">
-              <div class="edu-head">
-                <h3>B.Tech — Electronics &amp; Communication Engineering</h3>
-                <span class="t-date">2007 – 2011</span>
-              </div>
-              <div class="t-sub">GGSIPU, Delhi</div>
-            </div>
-          </section>
-        </div>
-
-        <aside class="side">
-          <section>
-            <h2 class="sec-title">Core Skills</h2>
-
-            <div class="skill">
-              <div class="skill-top">
-                <span>Delivery &amp; Program Mgmt</span
-                ><span class="skill-pct">90%</span>
-              </div>
-              <div class="bar"><i style="--w: 90%"></i></div>
-            </div>
-            <div class="skill">
-              <div class="skill-top">
-                <span>Distributed Team Leadership</span
-                ><span class="skill-pct">95%</span>
-              </div>
-              <div class="bar"><i style="--w: 95%"></i></div>
-            </div>
-            <div class="skill">
-              <div class="skill-top">
-                <span>P&amp;L / Portfolio</span
-                ><span class="skill-pct">85%</span>
-              </div>
-              <div class="bar"><i style="--w: 85%"></i></div>
-            </div>
-            <div class="skill">
-              <div class="skill-top">
-                <span>Engineering Excellence</span
-                ><span class="skill-pct">90%</span>
-              </div>
-              <div class="bar"><i style="--w: 90%"></i></div>
-            </div>
-            <div class="skill">
-              <div class="skill-top">
-                <span>Stakeholder Management</span
-                ><span class="skill-pct">90%</span>
-              </div>
-              <div class="bar"><i style="--w: 90%"></i></div>
-            </div>
-            <div class="skill">
-              <div class="skill-top">
-                <span>Agile / DevOps</span><span class="skill-pct">85%</span>
-              </div>
-              <div class="bar"><i style="--w: 85%"></i></div>
-            </div>
-          </section>
-
-          <section>
-            <h2 class="sec-title">Expertise</h2>
-            <div class="tags">
-              <span class="tag">Engineering Delivery</span
-              ><span class="tag">Portfolio Management</span
-              ><span class="tag">Program Management</span
-              ><span class="tag">Global Delivery</span
-              ><span class="tag">Operational Excellence</span
-              ><span class="tag">Distributed Teams</span
-              ><span class="tag">Cloud-Native</span
-              ><span class="tag">Microservices</span
-              ><span class="tag">Node.js</span><span class="tag">ReactJS</span
-              ><span class="tag">AWS</span><span class="tag">Agile / Scrum</span
-              ><span class="tag">CI/CD</span><span class="tag">BFSI</span>
-            </div>
-          </section>
-
-          <section>
-            <h2 class="sec-title">Highlights</h2>
-            <div
-              class="tags"
-              style="flex-direction: column; align-items: flex-start; gap: 8px"
-            >
-              <span class="tag" style="border-radius: 6px"
-                >14+ years in technology &amp; engineering leadership</span
-              >
-              <span class="tag" style="border-radius: 6px"
-                >Led 180+ member orgs · 32 direct reports</span
-              >
-              <span class="tag" style="border-radius: 6px"
-                >₹12–15 Cr P&amp;L ownership</span
-              >
-              <span class="tag" style="border-radius: 6px"
-                >Founder, Agnisc Corp</span
-              >
-            </div>
-          </section>
-        </aside>
-      </div>
+    <div class="contact">
+      <span><b>Phone</b><a href="tel:+91-9654377145">+91-9654377145</a></span>
+      <span><b>Email</b><a href="mailto:nitin88gupta@gmail.com">nitin88gupta@gmail.com</a></span>
+      <span><b>LinkedIn</b><a href="https://www.linkedin.com/in/nitin-gupta-18a8241a/" target="_blank" rel="noopener">linkedin.com/in/nitin-gupta-18a8241a</a></span>
+      <span><b>Location</b>Gurgaon, India</span>
     </div>
-  </body>
+
+    <div class="switcher">
+      <div class="seg" role="tablist" aria-label="Choose a profile focus">
+        <button role="tab" data-key="product" aria-selected="true">Product Engineering</button>
+        <button role="tab" data-key="ai" aria-selected="false">AI Transformation</button>
+        <button role="tab" data-key="delivery" aria-selected="false">Engineering Delivery</button>
+      </div>
+      <button class="print-btn" id="printBtn" title="Print or save as PDF">&#x2193; Save PDF</button>
+    </div>
+
+    <div class="grid">
+      <div class="main">
+        <section>
+          <h2 class="sec-title">Profile</h2>
+          <p class="lead" id="summary"></p>
+        </section>
+
+        <section>
+          <h2 class="sec-title">Work Experience</h2>
+          <div class="timeline" id="timeline"></div>
+        </section>
+
+        <section>
+          <h2 class="sec-title">Education</h2>
+          <div id="education"></div>
+        </section>
+      </div>
+
+      <aside class="side">
+        <section>
+          <h2 class="sec-title">Core Skills</h2>
+          <div id="skills"></div>
+        </section>
+        <section>
+          <h2 class="sec-title">Expertise</h2>
+          <div class="tags" id="expertise"></div>
+        </section>
+        <section>
+          <h2 class="sec-title">Highlights</h2>
+          <div class="tags hl" style="flex-direction:column;align-items:flex-start;gap:8px">
+            <span class="tag">14+ years in technology &amp; engineering leadership</span>
+            <span class="tag">Led 180+ member orgs · 32 direct reports</span>
+            <span class="tag">₹12–15 Cr P&amp;L ownership</span>
+            <span class="tag">Founder, Agnisc Corp</span>
+          </div>
+        </section>
+      </aside>
+    </div>
+
+    <div class="about">
+      <h2 class="sec-title">More About Me</h2>
+      <p>I am a seasoned technology and product-engineering leader focused on building impactful products and high-performing organizations that deliver sustainable growth for customers and stakeholders. I have defined strategic visions and delivered innovative solutions for organizations including Xebia, Knowlarity, and Quess Corp, and partnered with clients such as McKinsey &amp; Company and Bain &amp; Company.</p>
+      <p>I have worked across the full software-development lifecycle — onsite, remote, and everything in between — with small and large organizations spanning Banking, Insurance, Telecom, Media, Security, and more. I stay hands-on with technology (ReactJS, Node.js, Python, Backbase, mobile-native) while leading distributed teams in onshore/offshore models, and I place great emphasis on Agile, TDD/BDD, and delivering quality products frequently and predictably.</p>
+    </div>
+
+    <footer>
+      <span>© <span id="yr"></span> Nitin Gupta · Gurgaon, India</span>
+      <span><a href="mailto:nitin88gupta@gmail.com">nitin88gupta@gmail.com</a> · <a href="https://www.linkedin.com/in/nitin-gupta-18a8241a/" target="_blank" rel="noopener">LinkedIn</a></span>
+    </footer>
+  </div>
+
+<script>
+/* ---------- shared data ---------- */
+const EXPERIENCE = [
+  { id:"founder", title:"Founder", company:"Agnisc Corp", loc:"India", date:"Apr 2025 – Present" },
+  { id:"xebiaAD", title:"Associate Director — Product Engineering", company:"Xebia", loc:"Gurgaon, India", date:"Mar 2022 – Mar 2025" },
+  { id:"knowlarity", title:"Technical Product Manager", company:"Knowlarity", loc:"Gurgaon, India", date:"Apr 2020 – Jan 2022" },
+  { id:"quess", title:"Engineering Manager", company:"Quess Corp", loc:"Gurgaon, India", date:"Sep 2019 – Apr 2020",
+    desc:"Led engineering delivery and technology execution for enterprise initiatives, accountable for team output, quality, and schedule." },
+  { id:"xebiaSC", title:"Senior Consultant", company:"Xebia", loc:"Gurgaon, India", date:"Jun 2015 – Aug 2019",
+    desc:"Delivered cloud-native, full-stack enterprise applications (Node.js, React, Angular, AWS) and solution architecture across enterprise modernization programs." },
+  { id:"tanzanite", title:"Associate Team Lead", company:"Tanzanite Infotech", loc:"Noida, India", date:"May 2014 – Jun 2015",
+    desc:"Led technical design and development for enterprise software, setting engineering standards for the team." },
+  { id:"shephertz", title:"Sr. Software Developer", company:"ShepHertz Technologies", loc:"Gurgaon, India", date:"Dec 2013 – May 2014",
+    desc:"Built backend and platform capabilities for enterprise applications at scale." },
+  { id:"purpletalk", title:"Software Developer", company:"Purple Talk", loc:"Hyderabad, India", date:"Jan 2012 – Dec 2013",
+    desc:"Developed iOS and enterprise mobile applications end to end." }
+];
+
+const EDUCATION = [
+  { deg:"Executive Program — Advanced Leadership & Change Management", school:"IIM Visakhapatnam", date:"2024 – 2025" },
+  { deg:"PG Diploma — Mobile Application Development", school:"CDAC Noida", date:"2011 – 2012" },
+  { deg:"B.Tech — Electronics & Communication Engineering", school:"GGSIPU, Delhi", date:"2007 – 2011" }
+];
+
+const ROLES = {
+  product:{
+    role:"Product Engineering Director",
+    tagline:"Engineering Excellence · Cloud-Native Platforms · P&L Leadership",
+    summary:"Product-engineering executive with 14+ years building and scaling engineering organizations and delivering enterprise platforms across BFSI, Telecom, Aviation, and Enterprise SaaS. Proven at leading 180+ member orgs with 32 direct reports and ₹12–15 Cr P&L, building Product Engineering Centers of Excellence, and driving cloud-native modernization that aligns product vision, engineering execution, and customer outcomes into measurable business growth.",
+    desc:{
+      founder:"Founded a digital-engineering and growth-consulting firm delivering product strategy, engineering modernization, and AI-enabled solutions to enterprise clients.",
+      xebiaAD:"Led a product-engineering organization of 180+ professionals (32 direct reports — Engineering Managers, Architects, Delivery Managers) with ₹12–15 Cr P&L. Built a Product Engineering Center of Excellence and delivered next-gen digital-banking platforms (Customer 360, PFM, Loan Servicing) on ThoughtMachine and Backbase.",
+      knowlarity:"Led product and engineering for a cloud-communications platform, owning product vision, scalability, and delivery across cross-functional teams."
+    },
+    skills:[["Engineering Leadership",90],["Product Strategy & Vision",85],["Cloud & Technical Architecture",90],["Engineering Excellence",95],["Team Building & Org Scaling",95],["Agile / Delivery",85]],
+    expertise:["Product Engineering","Platform Engineering","Cloud-Native","Microservices","ReactJS","Node.js","Python","Backbase","ThoughtMachine","AWS","Agile / Scrum","TDD / BDD","CI/CD","Digital Banking"]
+  },
+  ai:{
+    role:"AI Transformation Leader",
+    tagline:"Generative & Agentic AI · Enterprise AI Strategy · Engineering Executive",
+    summary:"Technology executive with 14+ years leading enterprise transformation, now focused on driving Generative and Agentic AI adoption across BFSI and enterprise domains. Pairs deep product-engineering leadership — 180+ member orgs, 32 direct reports, ₹12–15 Cr P&L — with hands-on delivery of AI-enabled banking solutions, intelligent categorization, and recommendation engines. Builds AI strategy, adoption roadmaps, governance, and intelligent automation that tie emerging technology to business value.",
+    desc:{
+      founder:"Founded a consultancy advising enterprises on AI transformation, GenAI implementation, and intelligent-automation strategy — from roadmap to governed, production-grade delivery.",
+      xebiaAD:"Delivered AI-enabled banking experiences — AI-powered transaction categorization and intelligent recommendation engines — while leading a 180+ member org with ₹12–15 Cr P&L. Shaped modernization and automation strategy for enterprise clients across BFSI.",
+      knowlarity:"Drove data-driven product capabilities and automation on a cloud-communications platform, improving reliability and customer experience."
+    },
+    skills:[["AI / GenAI Strategy",85],["Enterprise AI Adoption",80],["Engineering Leadership",90],["Cloud & Architecture",90],["Intelligent Automation",80],["Change Management",85]],
+    expertise:["Generative AI","Agentic AI","LLM Applications","AI Governance","Intelligent Automation","Enterprise AI Adoption","Python","Cloud-Native","Microservices","Backbase","ThoughtMachine","AWS","Digital Banking","Change Management"]
+  },
+  delivery:{
+    role:"Engineering Delivery Director",
+    tagline:"Global Distributed Delivery · Portfolio & Program Leadership · P&L",
+    summary:"Engineering delivery executive with 14+ years managing distributed teams, enterprise portfolios, and complex transformation programs across BFSI, Telecom, Aviation, and Enterprise SaaS. Led 180+ member organizations with 32 direct reports and ₹12–15 Cr P&L, accountable for delivery excellence, operational governance, customer success, and profitability — well suited to global and remote-first operating models.",
+    desc:{
+      founder:"Founded a digital-engineering consultancy delivering modernization and transformation programs with outcome-based delivery models.",
+      xebiaAD:"Owned an enterprise engineering portfolio with ₹12–15 Cr P&L and a 180+ member, geographically distributed organization (32 direct reports). Established delivery-governance and CoE frameworks driving predictable, high-quality outcomes across concurrent banking programs.",
+      knowlarity:"Managed end-to-end delivery for a cloud-communications platform — scope, quality, and timelines across cross-functional engineering teams."
+    },
+    skills:[["Delivery & Program Mgmt",90],["Distributed Team Leadership",95],["P&L / Portfolio",85],["Engineering Excellence",90],["Stakeholder Management",90],["Agile / DevOps",85]],
+    expertise:["Engineering Delivery","Portfolio Management","Program Management","Global Delivery","Operational Excellence","Distributed Teams","Cloud-Native","Microservices","Node.js","ReactJS","AWS","Agile / Scrum","CI/CD","BFSI"]
+  }
+};
+
+/* ---------- render helpers ---------- */
+const $ = s => document.querySelector(s);
+const esc = s => s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+
+function renderStatic(){
+  $("#timeline").innerHTML = EXPERIENCE.map(e => `
+    <div class="t-item" data-id="${e.id}">
+      <div class="t-dot"></div>
+      <div class="t-head"><h3>${esc(e.title)}</h3><span class="t-date">${esc(e.date)}</span></div>
+      <div class="t-sub">${esc(e.company)} <span class="t-loc">· ${esc(e.loc)}</span></div>
+      <p>${esc(e.desc || "")}</p>
+    </div>`).join("");
+  $("#education").innerHTML = EDUCATION.map(e => `
+    <div class="edu-item">
+      <div class="edu-head"><h3>${esc(e.deg)}</h3><span class="t-date">${esc(e.date)}</span></div>
+      <div class="t-sub">${esc(e.school)}</div>
+    </div>`).join("");
+  $("#yr").textContent = new Date().getFullYear();
+}
+
+function applyRole(key, animate=true){
+  const v = ROLES[key]; if(!v) return;
+  const reduce = window.matchMedia("(prefers-reduced-motion:reduce)").matches;
+
+  const swap = () => {
+    document.title = "Nitin Gupta — " + v.role;
+    $("#role").textContent = v.role;
+    $("#tagline").innerHTML = esc(v.tagline);
+    $("#summary").textContent = v.summary;
+
+    // per-role experience descriptions
+    EXPERIENCE.forEach(e => {
+      if(v.desc[e.id]){
+        const p = document.querySelector(`.t-item[data-id="${e.id}"] p`);
+        if(p) p.textContent = v.desc[e.id];
+      }
+    });
+
+    // skills
+    $("#skills").innerHTML = v.skills.map(([n,p]) => `
+      <div class="skill">
+        <div class="skill-top"><span>${esc(n)}</span><span class="skill-pct">${p}%</span></div>
+        <div class="bar"><i data-w="${p}%"></i></div>
+      </div>`).join("");
+    // expertise
+    $("#expertise").innerHTML = v.expertise.map(t => `<span class="tag">${esc(t)}</span>`).join("");
+
+    // animate bars
+    requestAnimationFrame(() => {
+      document.querySelectorAll(".bar i").forEach(b => { b.style.width = reduce ? b.dataset.w : "0"; });
+      if(!reduce) requestAnimationFrame(() => requestAnimationFrame(() =>
+        document.querySelectorAll(".bar i").forEach(b => b.style.width = b.dataset.w)));
+    });
+
+    // active tab + hash
+    document.querySelectorAll(".seg button").forEach(b =>
+      b.setAttribute("aria-selected", String(b.dataset.key === key)));
+    if(history.replaceState) history.replaceState(null,"", key==="product" ? "#" : "#"+key);
+
+    document.querySelectorAll(".fade").forEach(el => el.classList.remove("fade"));
+  };
+
+  if(animate && !reduce){
+    ["#role","#tagline","#summary"].forEach(s => $(s).classList.add("fade"));
+    document.querySelectorAll('.t-item[data-id="founder"] p, .t-item[data-id="xebiaAD"] p, .t-item[data-id="knowlarity"] p')
+      .forEach(el => el.classList.add("fade"));
+    setTimeout(swap, 180);
+  } else swap();
+}
+
+/* ---------- init ---------- */
+renderStatic();
+const fromHash = (location.hash || "").replace("#","");
+applyRole(ROLES[fromHash] ? fromHash : "product", false);
+
+document.querySelectorAll(".seg button").forEach(b =>
+  b.addEventListener("click", () => applyRole(b.dataset.key)));
+window.addEventListener("hashchange", () => {
+  const k = (location.hash||"").replace("#","");
+  if(ROLES[k]) applyRole(k);
+});
+$("#printBtn").addEventListener("click", () => window.print());
+</script>
+</body>
 </html>
